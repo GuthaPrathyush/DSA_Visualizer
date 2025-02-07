@@ -1,0 +1,428 @@
+{
+  "array": {
+    "title": "Array Data Structure",
+    "description": "An array is a linear data structure that stores elements in contiguous memory locations. It provides constant-time access to elements using indices and supports basic operations like insertion, deletion, and traversal.",
+    "timeComplexity": "Access: O(1), Search: O(n), Insert: O(n), Delete: O(n)",
+    "spaceComplexity": "O(n) where n is the number of elements",
+    "advantages": [
+      "Constant time access to elements using index",
+      "Memory efficient with simple memory allocation",
+      "Cache friendly due to memory locality",
+      "Easy to implement and use",
+      "Suitable for random access patterns"
+    ],
+    "disadvantages": [
+      "Fixed size in static arrays",
+      "Insertion and deletion are expensive (O(n))",
+      "Memory wastage in static arrays",
+      "Resizing is expensive in dynamic arrays",
+      "Not suitable for frequent insertions/deletions"
+    ],
+    "applications": [
+      "Storing and accessing sequential data",
+      "Implementing other data structures (stacks, queues)",
+      "Matrix operations and linear algebra",
+      "Buffer pools and memory management",
+      "Lookup tables and caching"
+    ],
+    "problems": [
+      {
+        "title": "Two Sum",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problems/two-sum/"
+      },
+      {
+        "title": "Container With Most Water",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problems/container-with-most-water/"
+      },
+      {
+        "title": "Trapping Rain Water",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problems/trapping-rain-water/"
+      }
+    ]
+  },
+    "linearSearch": {
+      "title": "Linear Search",
+      "description": "Linear search is a simple searching algorithm that checks every element in a list sequentially until the target element is found or the list ends.",
+      "timeComplexity": "O(n) where n is the number of elements",
+      "spaceComplexity": "O(1)",
+      "advantages": [
+        "Simple and easy to implement",
+        "Works on both sorted and unsorted data",
+        "No need for additional memory or complex data structures"
+      ],
+      "disadvantages": [
+        "Inefficient for large data sets",
+        "Slower than binary search for large sorted lists"
+      ],
+      "applications": [
+        "Finding an element in an unsorted list",
+        "Simple search tasks in small data sets"
+      ],
+      "problems": [
+        {
+          "title": "Search in Rotated Sorted Array",
+          "difficulty": "Medium",
+          "leetCodeUrl": "https://leetcode.com/problems/search-in-rotated-sorted-array/"
+        },
+        {
+          "title": "Find Minimum in Rotated Sorted Array",
+          "difficulty": "Medium",
+          "leetCodeUrl": "https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/"
+        }
+      ]
+    },
+    "binarySearch": {
+      "title": "Binary Search",
+      "description": "Binary search is an efficient algorithm for finding an item from a sorted list by repeatedly dividing the search interval in half. If the value of the target is less than the value in the middle of the interval, the search continues on the lower half, or if the target is greater, it continues on the upper half.",
+      "timeComplexity": "O(log n) where n is the number of elements",
+      "spaceComplexity": "O(1)",
+      "advantages": [
+        "Much faster than linear search for large datasets",
+        "Efficient for sorted data sets",
+        "Requires fewer comparisons"
+      ],
+      "disadvantages": [
+        "Requires sorted data",
+        "Not suitable for unsorted lists",
+        "Can be complex to implement for certain use cases"
+      ],
+      "applications": [
+        "Searching for an element in a sorted array",
+        "Efficient searching in binary trees and databases"
+      ],
+      "problems": [
+        {
+          "title": "Binary Search",
+          "difficulty": "Easy",
+          "leetCodeUrl": "https://leetcode.com/problems/binary-search/"
+        },
+        {
+          "title": "Find First and Last Position of Element in Sorted Array",
+          "difficulty": "Medium",
+          "leetCodeUrl": "https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/"
+        }
+      ]
+    },  
+  "stack": {
+    "title": "Stack Data Structure",
+    "description": "A stack is a linear data structure that follows the Last-In-First-Out (LIFO) principle. Elements can only be added or removed from the top of the stack, making it ideal for tracking state and managing hierarchical data.",
+    "timeComplexity": "Push: O(1), Pop: O(1), Peek: O(1)",
+    "spaceComplexity": "O(n) where n is the number of elements",
+    "advantages": [
+      "Simple and intuitive implementation",
+      "Constant time operations",
+      "Memory is managed in a structured way",
+      "Useful for backtracking algorithms",
+      "Natural choice for recursive algorithms"
+    ],
+    "disadvantages": [
+      "Limited access (only top element)",
+      "Fixed size in array implementations",
+      "No random access to elements",
+      "Potential for stack overflow",
+      "Memory underutilization in fixed-size implementations"
+    ],
+    "applications": [
+      "Function call management in programming languages",
+      "Expression evaluation and syntax parsing",
+      "Undo mechanisms in text editors",
+      "Browser history management",
+      "Depth-first search implementation",
+      "Memory management",
+      "Parentheses matching"
+    ],
+    "problems": [
+      {
+        "title": "Valid Parentheses",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problems/valid-parentheses/"
+      },
+      {
+        "title": "Min Stack",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problems/min-stack/"
+      },
+      {
+        "title": "Largest Rectangle in Histogram",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problems/largest-rectangle-in-histogram/"
+      }
+    ]
+  },
+  "queue": {
+    "title": "Queue Data Structure",
+    "description": "A queue is a linear data structure that follows the First-In-First-Out (FIFO) principle. Elements are added at the rear and removed from the front, making it ideal for managing sequential processes and buffering.",
+    "timeComplexity": "Enqueue: O(1), Dequeue: O(1), Peek: O(1)",
+    "spaceComplexity": "O(n) where n is the number of elements",
+    "advantages": [
+      "Simple and intuitive implementation",
+      "Constant time operations",
+      "Preserves order of elements",
+      "Efficient for sequential processing",
+      "Natural choice for breadth-first algorithms"
+    ],
+    "disadvantages": [
+      "Fixed size in array implementations",
+      "No random access to elements",
+      "Memory wastage in circular array implementation",
+      "Dequeue operation can be slow in array implementation",
+      "Potential for queue overflow"
+    ],
+    "applications": [
+      "Process scheduling in operating systems",
+      "Print spooling systems",
+      "Breadth-first search algorithms",
+      "Message queues in distributed systems",
+      "Buffering in data streams",
+      "Task scheduling",
+      "Network packet processing"
+    ],
+    "problems": [
+      {
+        "title": "Implement Queue using Stacks",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problems/implement-queue-using-stacks/"
+      },
+      {
+        "title": "Design Circular Queue",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problems/design-circular-queue/"
+      },
+      {
+        "title": "Design Circular Deque",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problems/design-circular-deque/"
+      }
+    ]
+  },
+  "knapsack": {
+    "title": "0/1 Knapsack Algorithm",
+    "description": "The 0/1 Knapsack problem is a classic optimization problem where given a set of items with weights and values, we need to determine which items to include in a collection so that the total weight is less than or equal to a given limit and the total value is as large as possible.",
+    "timeComplexity": "O(n*W) where n is number of items and W is capacity",
+    "spaceComplexity": "O(n*W) for dynamic programming solution",
+    "advantages": [
+      "Optimal solution guaranteed",
+      "Can handle multiple constraints",
+      "Applicable to many real-world scenarios",
+      "Solution can be backtracked to find selected items",
+      "Efficient for small to medium inputs"
+    ],
+    "disadvantages": [
+      "Exponential time complexity for branch and bound",
+      "Memory intensive for large inputs",
+      "Not suitable for fractional items",
+      "NP-hard problem in its general form",
+      "May be impractical for very large instances"
+    ],
+    "applications": [
+      "Resource allocation in cloud computing",
+      "Investment portfolio optimization",
+      "Cargo loading optimization",
+      "Cutting stock problems",
+      "Budget constrained procurement",
+      "Project selection under constraints",
+      "Memory management in embedded systems"
+    ],
+    "problems": [
+      {
+        "title": "Partition Equal Subset Sum",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problems/partition-equal-subset-sum/"
+      },
+      {
+        "title": "Target Sum",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problems/target-sum/"
+      },
+      {
+        "title": "Last Stone Weight II",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problems/last-stone-weight-ii/"
+      }
+    ]
+  },
+  "rodCutting": {
+    "title": "Rod Cutting Algorithm",
+    "description": "The Rod Cutting problem is a classic dynamic programming problem where given a rod of length n and prices for all pieces of length less than n, we need to find the maximum value obtainable by cutting up the rod and selling the pieces.",
+    "timeComplexity": "O(n²) where n is the length of the rod",
+    "spaceComplexity": "O(n) for optimized solution",
+    "advantages": [
+      "Finds optimal solution for all subproblems",
+      "Can handle variable-sized cuts",
+      "Reuses calculated results",
+      "Applicable to real-world resource optimization",
+      "Solution scales well with input size"
+    ],
+    "disadvantages": [
+      "Quadratic time complexity",
+      "Memory usage grows with input size",
+      "May not consider practical cutting constraints",
+      "Limited to linear cutting patterns",
+      "Does not account for cutting costs"
+    ],
+    "applications": [
+      "Lumber cutting optimization",
+      "Paper roll cutting",
+      "Metal rod cutting in manufacturing",
+      "Resource allocation in industrial processes",
+      "Length optimization in material cutting",
+      "Cable cutting optimization",
+      "Textile industry cutting patterns"
+    ],
+    "problems": [
+      {
+        "title": "Integer Break",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problems/integer-break/"
+      },
+      {
+        "title": "Minimum Cost Tree From Leaf Values",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problems/minimum-cost-tree-from-leaf-values/"
+      },
+      {
+        "title": "Burst Balloons",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problems/burst-balloons/"
+      }
+    ]
+  },
+  "dijkstra": {
+    "title": "Dijkstra's Algorithm",
+    "description": "Dijkstra's algorithm finds the shortest paths between nodes in a weighted graph. Starting from a source node, it maintains a set of unvisited nodes and continuously updates the shortest distance to each node. For each step, it selects the unvisited node with the minimum distance, marks it as visited, and updates the distances to its neighbors if a shorter path is found through the current node.",
+    "timeComplexity": "O(V²) with adjacency matrix, O((V+E)logV) with min-heap",
+    "spaceComplexity": "O(V) where V is the number of vertices",
+    "advantages": [
+      "Guarantees shortest path in weighted graphs",
+      "Works with both directed and undirected graphs",
+      "Efficient for sparse graphs with priority queue",
+      "Can find shortest path to all vertices",
+      "Simple to implement with adjacency matrix"
+    ],
+    "disadvantages": [
+      "Doesn't work with negative edge weights",
+      "Slower than BFS for unweighted graphs",
+      "Memory intensive for dense graphs",
+      "May not be suitable for real-time applications with very large graphs"
+    ],
+    "applications": [
+      "GPS and navigation systems",
+      "Network routing protocols",
+      "Social networks (finding shortest connection)",
+      "Games (pathfinding for NPCs)",
+      "Transportation and logistics optimization",
+      "Network analysis for finding bottlenecks",
+      "IP routing for determining efficient packet paths"
+    ],
+    "problems": [
+      {
+        "title": "Network Delay Time",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problems/network-delay-time/"
+      },
+      {
+        "title": "Path with Maximum Probability",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problems/path-with-maximum-probability/"
+      },
+      {
+        "title": "Cheapest Flights Within K Stops",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problems/cheapest-flights-within-k-stops/"
+      }
+    ]
+  },
+  "topologicalSort": {
+    "title": "Topological Sort",
+    "description": "Topological sorting for Directed Acyclic Graph (DAG) is a linear ordering of vertices such that for every directed edge uv, vertex u comes before v in the ordering. The algorithm works by repeatedly finding nodes with no incoming edges, removing them and their outgoing edges from the graph, and adding them to the result. This process continues until all nodes are processed or a cycle is detected.",
+    "timeComplexity": "O(V + E) where V is number of vertices and E is number of edges",
+    "spaceComplexity": "O(V) for storing the visited array and recursion stack",
+    "advantages": [
+      "Efficient for dependency resolution",
+      "Linear time complexity",
+      "Useful for scheduling tasks",
+      "Can detect cycles in directed graphs",
+      "Natural solution for precedence constraints"
+    ],
+    "disadvantages": [
+      "Only works on Directed Acyclic Graphs (DAGs)",
+      "Cannot handle cyclic dependencies",
+      "Requires entire graph to be known beforehand",
+      "Multiple valid orderings possible"
+    ],
+    "applications": [
+      "Build systems and dependency management",
+      "Task scheduling in project management",
+      "Course prerequisites in academic planning",
+      "Pipeline processing in computer architecture",
+      "Package management in software systems",
+      "Data serialization",
+      "Symbol resolution in linkers"
+    ],
+    "problems": [
+      {
+        "title": "Course Schedule",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problems/course-schedule/"
+      },
+      {
+        "title": "Alien Dictionary",
+        "difficulty": "Hard",
+        "leetCodeUrl": "https://leetcode.com/problems/alien-dictionary/"
+      },
+      {
+        "title": "Parallel Courses",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problems/parallel-courses/"
+      }
+    ]
+  },
+  "openHashing": {
+    "title": "Open Hashing (Separate Chaining)",
+    "description": "Open Hashing, also known as Separate Chaining, is a collision resolution technique in hash tables where each bucket is independent and contains a linked list of entries that have the same hash. When a collision occurs, the element is added to the linked list at the bucket.",
+    "timeComplexity": "O(1) average case, O(n) worst case for operations",
+    "spaceComplexity": "O(n) where n is the number of elements",
+    "advantages": [
+      "Simple to implement",
+      "Performs well even with a high load factor",
+      "Deletion is straightforward",
+      "No risk of running out of space",
+      "Works well with poor hash functions"
+    ],
+    "disadvantages": [
+      "Extra memory needed for linked lists",
+      "Cache performance may be poor due to linked list traversal",
+      "More complex memory management",
+      "Space overhead for pointers in linked lists"
+    ],
+    "applications": [
+      "Symbol tables in compilers",
+      "Database indexing",
+      "Caching systems",
+      "Implementation of sets and maps",
+      "String interning",
+      "Frequency counting",
+      "Duplicate detection"
+    ],
+    "problems": [
+      {
+        "title": "Design HashMap",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problems/design-hashmap/"
+      },
+      {
+        "title": "Design HashSet",
+        "difficulty": "Easy",
+        "leetCodeUrl": "https://leetcode.com/problems/design-hashset/"
+      },
+      {
+        "title": "Group Anagrams",
+        "difficulty": "Medium",
+        "leetCodeUrl": "https://leetcode.com/problems/group-anagrams/"
+      }
+    ]
+  }
+}
